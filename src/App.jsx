@@ -6,6 +6,8 @@ import Resume from './Components/Resume'
 import Portfolio from './Components/Portfolio'
 import Contact from './Components/Contact'
 import Header from './Components/Header'
+import Nav from './Components/Nav'
+
 function App() {
   const [currentPage, setCurrentPage] = useState('Home')
   const renderPage = () => {
@@ -25,7 +27,7 @@ function App() {
   const handlePageChange = (page) => setCurrentPage(page)
   return (
     <>
-      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+      {/* <Header currentPage={currentPage} handlePageChange={handlePageChange} /> */}
       <main>
         {renderPage()}
       </main>

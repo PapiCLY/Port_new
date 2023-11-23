@@ -1,11 +1,11 @@
 import { useState } from 'react'
-// import 'bootswatch/dist/Vapor/bootstrap.min.css'
+import 'bootswatch/dist/Vapor/bootstrap.min.css'
 import './App.css'
 import Home from './Components/Home'
 import Resume from './Components/Resume'
 import Portfolio from './Components/Portfolio'
 import Contact from './Components/Contact'
-// import Header from './Components/Header'
+import Header from './Components/Header'
 function App() {
   const [currentPage, setCurrentPage] = useState('Home')
   const renderPage = () => {
